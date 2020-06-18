@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-
+#Make sure to keep password private 
 
 import psycopg2
 connection = psycopg2.connect(
