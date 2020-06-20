@@ -1,0 +1,36 @@
+# This Program is to create tables in Postgres, and load data from .csv files
+# Import file modules
+# Create a file list
+#files - {/NYTIMES/xxxxx.csv, /CDC/yyyy.csv, /JHC/data.csv etccc}
+# table_name(first 2 letters, like NY_filename without csv)
+# column names header column in filename
+# Loop thorugh file_names, get table_name, column_names, and pass to create table funtion to create tables
+# Then Insert rows
+# for files in [....]
+''' table_name =[]
+column_name =[]
+data_type=[] (I would say insert everythig as string as later we can convert)
+''' create_tabek_functio
+'''' insert data function)
+
+# To Create table in Postgres
+CREATE TABLE NY_US_COUNTIES
+(
+  date date,
+  county character varying(50),
+  state character varying(50),
+  dob date,
+  fips number(10),
+  cases number(15),
+  deaths number(15),
+  confirmed_cases number(15),
+  confirmed_deaths number(15),
+  probable_cases number(15),
+  probable_deaths number(15),
+  cases number(15) character varying(255)
+)
+
+# To import this CSV file into the persons table, you use COPY statement as follows:
+
+COPY persons(first_name,last_name,dob,email) 
+FROM 'C:\tmp\persons.csv' DELIMITER ',' CSV HEADER;
