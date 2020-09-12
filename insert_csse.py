@@ -3,7 +3,7 @@ import psycopg2
 import os
 #from config import Config
 
-conn = psycopg2.connect("host=covid19.c9opif8xcrgf.us-east-1.rds.amazonaws.com dbname=covid19 user=covid19 password=covid2019")
+conn = psycopg2.connect("host=covid19.c9opif8xcrgf.us-east-1.rds.amazonaws.com dbname=covid19 user= password=")
 folder = os.path.join(os.getcwd(), 'data','CSSE')
 print('The Folder is: ' +folder)
 
